@@ -112,6 +112,8 @@ img {
 
 /* FEATURES */
 .features-icon {
+  margin-bottom: 16px;
+  stroke: #0f1214;
 }
 
 .features-title {
@@ -149,8 +151,8 @@ img {
   line-height: 1.5;
 }
 
-/* CHAIRS */
-.chair-box {
+/* SOLUTIONS */
+.solution-box {
   padding: 24px;
 }
 
@@ -160,30 +162,53 @@ h3 {
   font-weight: 600;
 }
 
-.chair-details {
+.solution-details {
   list-style: none;
   margin-bottom: 24px;
 }
 
-.chair-details li {
+.solution-details li {
   display: flex;
   align-items: center;
   gap: 12px;
   margin-bottom: 24px;
 }
 
-.chair-details li:last-child {
+.solution-details li:last-child {
   margin-bottom: 0;
 }
 
-.chair-icon {
+.solution-icon {
 }
 
-.chair-price {
+.solution-price {
   display: flex;
   justify-content: space-between;
   font-size: 20px;
 }
+
+/* SOLUTION - 2 */
+.grid-services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 10px;
+}
+
+.services-card {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background-image: url('img/green-garden.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  overflow: hidden;
+  color: white;
+
+  padding: 20px;
+}
+
+/* FOOTER */
 
 footer {
   margin-bottom: 48px;

@@ -316,6 +316,8 @@ h3 {
 }
 
 .accordion-item {
+  cursor: pointer;
+
   border-radius: 5px;
   color: #7d8284;
 
@@ -329,6 +331,10 @@ h3 {
   column-gap: 25px;
   row-gap: 30px;
   align-items: center;
+}
+
+.accordion-item:hover {
+  color: #0f1214;
 }
 
 .active {

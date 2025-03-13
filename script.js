@@ -8,6 +8,10 @@ const btnServices = document.querySelectorAll('.btn--services');
 
 const section2 = document.querySelector('.section--2');
 
+const containerFAQ = document.querySelector('.accordion-container');
+const itemsFAQ = document.querySelectorAll('.accordion-item');
+
+
 // sections reveal while scrolling
 const revealSection = function (entries, observer) {
     entries.forEach(entry => {
@@ -37,4 +41,16 @@ btnHeader.addEventListener('click', function () {
 section2.addEventListener('click', function (event) {
     if (event.target.closest('.btn--services')) event.preventDefault();
 });
+
+// FAQ SECTION
+containerFAQ.addEventListener('click', function (event) {
+    const clickedItemFAQ = event.target.closest('.accordion-item');
+    if (!clickedItemFAQ) return;
+
+
+    const openStatus = clickedItemFAQ.classList.contains('active') ? true : false;
+    itemsFAQ.forEach(item => item.classList.remove('active'));
+    if (!openStatus) clickedItemFAQ.classList.add('active');
+});
+
 

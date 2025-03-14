@@ -468,6 +468,7 @@ footer {
 }
 
 .btn-dot {
+  cursor: pointer;
   height: 12px;
   width: 12px;
   background-color: white;

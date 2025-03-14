@@ -479,3 +479,91 @@ footer {
 .dot-active {
   background-color: #829a3e;
 }
+
+/* TABLE COMPONENT */
+.table-container {
+  position: relative;
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+table tr,
+thead {
+  border-bottom: 1px solid rgb(189, 187, 187);
+}
+
+table tr:last-child {
+  border-bottom: none;
+}
+
+thead th {
+  width: 25%;
+  font-size: 12px;
+}
+
+th,
+td {
+  padding: 20px 30px 20px 0;
+}
+
+.table-colunm--title {
+  font-size: 18px;
+}
+
+.table-colunm--tag {
+  font-size: 12px;
+  color: #5c5c5c;
+}
+
+.table-colunm--location {
+  font-size: 16px;
+}
+
+.table-colunm--link {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.table-colunm--link a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+}
+
+.table-colunm--link a:hover {
+  border: 1px dashed #878787;
+  background-color: white;
+}
+
+.table-colunm--link a svg {
+  stroke: 4px;
+  width: 15px;
+  height: 15px;
+}
+
+.project-section-object,
+.project-section-img {
+  position: absolute;
+  right: 12%;
+  bottom: 25%;
+  border-radius: 10px;
+  height: 150px;
+  width: 200px;
+}
+.project-section-object {
+  background-color: #badc58;
+  transform: rotate(-5grad);
+}
+
+.project-section-img {
+  transform: rotate(-15grad);
+}

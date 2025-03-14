@@ -481,6 +481,11 @@ footer {
 }
 
 /* TABLE COMPONENT */
+.table-container {
+  position: relative;
+  width: 100%;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
@@ -543,4 +548,22 @@ td {
   stroke: 4px;
   width: 15px;
   height: 15px;
+}
+
+.project-section-object,
+.project-section-img {
+  position: absolute;
+  right: 12%;
+  bottom: 25%;
+  border-radius: 10px;
+  height: 150px;
+  width: 200px;
+}
+.project-section-object {
+  background-color: #badc58;
+  transform: rotate(-5grad);
+}
+
+.project-section-img {
+  transform: rotate(-15grad);
 }

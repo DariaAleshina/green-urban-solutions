@@ -6,7 +6,7 @@ const allSections = document.querySelectorAll('section');
 const btnHeader = document.querySelector('.btn--header');
 const btnServices = document.querySelectorAll('.btn--services');
 
-const section2 = document.querySelector('.section--2');
+const section2 = document.querySelector('#section--2');
 
 const containerFAQ = document.querySelector('.accordion-container');
 const itemsFAQ = document.querySelectorAll('.accordion-item');

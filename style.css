@@ -34,7 +34,6 @@ body {
   margin: 0 auto;
 }
 
-header,
 section {
   margin-bottom: 96px;
 }
@@ -93,8 +92,14 @@ a {
 
 /* HERO SECTION */
 .hero-section {
-  background-color: orangered;
+  position: relative;
   height: 100vh;
+}
+
+header {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
 }
 
 /* NAVIGATION */
@@ -147,7 +152,6 @@ header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 80px;
-  margin-top: 64px;
 }
 
 .btn--header {
@@ -172,7 +176,7 @@ h1 {
 }
 
 .header-text {
-  margin-bottom: 24px;
+  margin-bottom: 32px;
   font-size: 17px;
   line-height: 1.5;
 }

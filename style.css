@@ -91,6 +91,12 @@ a {
 /* COMPONENT STYLES */
 /* ------------------------ */
 
+/* HERO SECTION */
+.hero-section {
+  background-color: orangered;
+  height: 100vh;
+}
+
 /* NAVIGATION */
 nav {
   padding: 20px 0;
@@ -273,8 +279,12 @@ h3 {
 /* SOLUTION - 2 - IN FINAL DESPLAY*/
 
 .grid-services {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr); */
 }
 
 .services-card {

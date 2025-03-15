@@ -117,6 +117,7 @@ nav {
 
 .nav-links a:hover,
 .nav-links a:active {
+  color: #7d8284;
 }
 
 .nav-links a:last-child {
@@ -127,6 +128,12 @@ nav {
   padding: 10px 20px;
   border-radius: 100px;
   background-color: #badc58;
+}
+
+.nav-links a:last-child:hover,
+.nav-links a:last-child:active {
+  color: #0f1214;
+  background-color: #c8e379;
 }
 
 /* HEADER */

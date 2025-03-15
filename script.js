@@ -6,7 +6,7 @@ const allSections = document.querySelectorAll('section');
 const btnHeader = document.querySelector('.btn--header');
 const btnServices = document.querySelectorAll('.btn--services');
 
-const section2 = document.querySelector('.section--2');
+const section2 = document.querySelector('#section--2');
 
 const containerFAQ = document.querySelector('.accordion-container');
 const itemsFAQ = document.querySelectorAll('.accordion-item');
@@ -46,10 +46,17 @@ btnHeader.addEventListener('click', function () {
 });
 
 
+
 // SERVICES SECTION
 // disable services buttons - temporary
 section2.addEventListener('click', function (event) {
     if (event.target.closest('.btn--services')) event.preventDefault();
+});
+
+// PROJECT SECTION 
+// disable links -  - temporary
+document.querySelector('#section--3').addEventListener('click', function (event) {
+    if (event.target.closest('.table-colunm--link')) event.preventDefault();
 });
 
 // FAQ SECTION

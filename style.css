@@ -34,7 +34,6 @@ body {
   margin: 0 auto;
 }
 
-header,
 section {
   margin-bottom: 96px;
 }
@@ -83,16 +82,76 @@ img {
   display: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* ------------------------ */
 /* COMPONENT STYLES */
 /* ------------------------ */
+
+/* HERO SECTION */
+.hero-section {
+  position: relative;
+  height: 100vh;
+}
+
+header {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+/* NAVIGATION */
+nav {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.nav-links a:link,
+.nav-links a:visited {
+  color: #0f1214;
+}
+
+.nav-links a:hover,
+.nav-links a:active {
+  color: #7d8284;
+}
+
+.nav-links a:last-child {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 10px 20px;
+  border-radius: 100px;
+  background-color: #badc58;
+}
+
+.nav-links a:last-child:hover,
+.nav-links a:last-child:active {
+  color: #0f1214;
+  background-color: #c8e379;
+}
 
 /* HEADER */
 header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 80px;
-  margin-top: 64px;
 }
 
 .btn--header {
@@ -117,7 +176,7 @@ h1 {
 }
 
 .header-text {
-  margin-bottom: 24px;
+  margin-bottom: 32px;
   font-size: 17px;
   line-height: 1.5;
 }
@@ -224,8 +283,12 @@ h3 {
 /* SOLUTION - 2 - IN FINAL DESPLAY*/
 
 .grid-services {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr); */
 }
 
 .services-card {

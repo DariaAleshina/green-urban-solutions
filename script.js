@@ -46,10 +46,17 @@ btnHeader.addEventListener('click', function () {
 });
 
 
+
 // SERVICES SECTION
 // disable services buttons - temporary
 section2.addEventListener('click', function (event) {
     if (event.target.closest('.btn--services')) event.preventDefault();
+});
+
+// PROJECT SECTION 
+// disable links -  - temporary
+document.querySelector('#section--3').addEventListener('click', function (event) {
+    if (event.target.closest('.table-colunm--link')) event.preventDefault();
 });
 
 // FAQ SECTION

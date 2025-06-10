@@ -14,10 +14,41 @@ DARK BACKGROUND: #262e32
 TEXT DARK: #0f1214
 */
 
+:root {
+  /* color system */
+  --dark-text: #0f1214;
+  --grey-text: #7d8284;
+  --green-main: #badc58;
+  --green-lighter: #c8e379;
+  --green-dark: #4a5823;
+  --blue-main: #22a6b3;
+  --background-dark: #262e32;
+
+  overflow-x: hidden;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+/* resetting default settings */
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.3rem #22a7b384;
+}
+
+/* removing default link styling  */
+a {
+  text-decoration: none;
+  color: inherit;
+  border-radius: 4px;
+}
+
+button {
+  border-radius: 4px;
 }
 
 /* ------------------------ */
@@ -26,7 +57,7 @@ TEXT DARK: #0f1214
 body {
   font-family: 'Inter', sans-serif;
   color: #0f1214;
-  border-bottom: 8px solid #badc58;
+  border-bottom: 8px solid var(--green-main);
 }
 
 .container {
@@ -66,7 +97,7 @@ img {
 
 .btn:link,
 .btn:visited {
-  background-color: #badc58;
+  background-color: var(--green-main);
   color: #0f1214;
   text-decoration: none;
   display: flex;
@@ -75,7 +106,7 @@ img {
 
 .btn:hover,
 .btn:active {
-  background-color: #c8e379;
+  background-color: var(--green-lighter);
 }
 
 .hidden {
@@ -350,6 +381,10 @@ h3 {
   border-radius: 50%;
   overflow: hidden;
   justify-content: center;
+}
+
+.btn--services:focus {
+  box-shadow: 0 0 0 0.3rem #ffffffea;
 }
 
 .services-title {

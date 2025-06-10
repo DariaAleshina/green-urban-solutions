@@ -42,7 +42,6 @@ TEXT DARK: #0f1214
   box-shadow: 0 0 0 0.3rem #22a7b384;
 }
 
-/* removing default link styling  */
 a {
   text-decoration: none;
   color: inherit;
@@ -63,7 +62,7 @@ body {
 }
 
 .container {
-  width: 992px;
+  max-width: 992px;
   padding: 0 32px;
   margin: 0 auto;
 }

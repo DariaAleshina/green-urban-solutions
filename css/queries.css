@@ -74,11 +74,15 @@
   }
 
   .btn--header {
-    width: 50%;
+    width: 40%;
   }
 
   .grid-3-cols {
     column-gap: 40px;
+  }
+
+  .services-card {
+    height: 350px;
   }
 
   /* table */
@@ -104,6 +108,97 @@
 
 /* below 768 px */
 @media (max-width: 48em) {
+  .btn--header {
+    width: 45%;
+  }
+
+  /* features */
+  .grid-3-cols {
+    grid-template-columns: 1fr;
+    row-gap: 63px;
+  }
+
+  /* services */
+  .grid-services {
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  .services-card {
+    width: 100%;
+    height: 300px;
+  }
+
+  /* table */
+  .table-colunm--title {
+    font-size: 16px;
+  }
+
+  .table-colunm--location {
+    font-size: 14px;
+  }
+
+  /* testimonials */
+  .corousel-container {
+    flex-direction: column;
+    padding: 50px 70px;
+    gap: 30px;
+  }
+  .corousel-container img {
+    height: 160px;
+    transform: translateY(-50px) scale(1.6);
+  }
+
+  .corousel-dots {
+    bottom: 0;
+  }
+
+  /* FAQ */
+  .faq-number,
+  .faq-question {
+    font-size: 20px;
+  }
+}
+
+/* for Phones - below 544px*/
+@media (max-width: 34em) {
+  .container {
+    padding: 0 24px;
+  }
+
+  .header-text {
+    width: 90%;
+  }
+  .btn--header {
+    width: 70%;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  /* table */
+  th,
+  td {
+    padding: 30px 10px;
+  }
+
+  .table-colunm--link {
+    justify-content: center;
+  }
+
+  .table-colunm--location {
+    display: none;
+  }
+
+  .corousel-container {
+    padding: 50px 50px;
+  }
+
+  .accordion-item {
+    column-gap: 20px;
+    padding: 20px;
+  }
 }
 
 /*

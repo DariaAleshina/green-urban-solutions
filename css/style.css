@@ -58,12 +58,13 @@ button {
 /* ------------------------ */
 body {
   font-family: 'Inter', sans-serif;
-  color: #0f1214;
+  color: var(--dark-text);
   border-bottom: 8px solid var(--green-main);
 }
 
 .container {
-  width: 960px;
+  width: 992px;
+  padding: 0 32px;
   margin: 0 auto;
 }
 
@@ -360,15 +361,15 @@ h3 {
 }
 
 .services-card--1 {
-  background-image: url('img/green-garden.png');
+  background-image: url('../img/green-garden.png');
 }
 
 .services-card--2 {
-  background-image: url('img/green-water.png');
+  background-image: url('../img/green-water.png');
 }
 
 .services-card--3 {
-  background-image: url('img/green-infr.png');
+  background-image: url('../img/green-infr.png');
 }
 
 .btn--services {

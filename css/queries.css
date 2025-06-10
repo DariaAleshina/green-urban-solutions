@@ -56,6 +56,10 @@
 
 /* smaller desktops - below 840 px (840 / 16 ) */
 @media (max-width: 52em) {
+  .nav-links {
+    gap: 30px;
+  }
+
   header {
     grid-template-columns: 1fr;
     row-gap: 48px;
@@ -108,6 +112,10 @@
 
 /* below 768 px */
 @media (max-width: 48em) {
+  .nav-links {
+    gap: 20px;
+  }
+
   .btn--header {
     width: 45%;
   }

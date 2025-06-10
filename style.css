@@ -66,10 +66,7 @@ body {
 }
 
 section {
-  margin-bottom: 96px;
-}
-
-section {
+  padding: 96px 0 0 0;
   transition: transform 1s, opacity 1s;
 }
 

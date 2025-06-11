@@ -119,7 +119,7 @@ const createDots = function () {
     testimonials.forEach(function (_, i) {
         dotContainer.insertAdjacentHTML(
             'beforeend',
-            `<button class="btn-dot" data-number=${i}>&nbsp;</button>`
+            `<button class="btn-dot" data-number=${i} title="click on review number ${i + 1}">&nbsp;</button>`
         );
     });
 }

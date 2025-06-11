@@ -365,15 +365,15 @@ h3 {
 }
 
 .services-card--1 {
-  background-image: url('../img/green-garden.png');
+  background-image: url('../img/green-garden.webp');
 }
 
 .services-card--2 {
-  background-image: url('../img/green-water.png');
+  background-image: url('../img/green-water.webp');
 }
 
 .services-card--3 {
-  background-image: url('../img/green-infr.png');
+  background-image: url('../img/green-infr.webp');
 }
 
 .btn--services {

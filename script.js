@@ -66,7 +66,7 @@ const scrollSmoothly = function (e) {
     if (linkRef !== '#' && linkRef.startsWith('#')) {
         const target = document.querySelector(`${linkRef}`);
         let offset = 0;
-        if (target.classList.contains('section--hidden')) offset = 96;
+        if (target.classList.contains('section--hidden')) offset = 90;
 
         const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
 

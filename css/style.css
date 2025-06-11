@@ -530,6 +530,7 @@ footer {
   cursor: pointer;
   border: none;
   background-color: white;
+  color: var(--dark-text);
   width: 40px;
   height: 40px;
   position: absolute;

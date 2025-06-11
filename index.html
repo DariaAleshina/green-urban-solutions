@@ -19,16 +19,22 @@
   <body>
     <div class="container">
       <div class="hero-section">
-        <nav>
+        <nav class="navigation" id="header-navigation">
           <div class="nav-logo">GreenScape</div>
           <div class="nav-links">
             <a href="#section--3">Projects</a>
+            <a href="#section--4">Client Reviews</a>
             <a href="#section--5">FAQ</a>
             <a href="#">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256"><path d="M211.66,165.54C225.16,159.7,232,144.37,232,120s-6.84-39.7-20.34-45.55c-11.65-5-27.24-2.23-46.46,8.35,10.58-19.22,13.39-34.81,8.35-46.46C167.7,22.84,152.37,16,128,16S88.3,22.84,82.45,36.34c-5,11.65-2.23,27.24,8.35,46.45C71.58,72.22,56,69.4,44.34,74.45,30.84,80.3,24,95.63,24,120s6.84,39.7,20.34,45.54A31,31,0,0,0,56.8,168c9.6,0,21-3.62,34-10.79C80.22,176.41,77.41,192,82.45,203.65,88.3,217.15,103.63,224,128,224s39.7-6.85,45.55-20.35a32.24,32.24,0,0,0,2.34-15c10.45,16.23,19.64,34.48,24.35,53.33A8,8,0,0,0,208,248a8.13,8.13,0,0,0,1.95-.24,8,8,0,0,0,5.82-9.7c-6.94-27.76-22.27-53.8-37.86-74.79Q189.68,168,199.2,168A31,31,0,0,0,211.66,165.54Zm-6.37-76.4C214.14,93,216,108,216,120s-1.86,27-10.7,30.86c-8.36,3.63-23.52-1.31-42.68-13.91a243.4,243.4,0,0,1-22.54-17C158.49,104.37,190.4,82.68,205.29,89.14ZM97.14,42.7C101,33.86,116,32,128,32s27,1.86,30.86,10.7c3.63,8.36-1.31,23.52-13.91,42.68a243.4,243.4,0,0,1-17,22.54C112.37,89.51,90.69,57.59,97.14,42.7ZM50.71,150.86C41.86,147,40,132,40,120s1.86-27,10.7-30.86A15.64,15.64,0,0,1,57,88c8.75,0,21.34,5.17,36.4,15.07a243.4,243.4,0,0,1,22.54,17C97.51,135.62,65.59,157.32,50.71,150.86Zm108.15,46.43C155,206.14,140,208,128,208s-27-1.86-30.86-10.7c-3.63-8.36,1.31-23.52,13.91-42.68a243.4,243.4,0,0,1,17-22.54C143.63,150.49,165.31,182.41,158.86,197.29Z"></path></svg>
               Contact Us
             </a>
           </div>
+          <button type="button" title="mobile navigation" class="bnt-mobile-nav">
+            <svg name="btn-open" class="icon-mobile-nav" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256"><path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"></path></svg>
+            <svg name="btn-close" class="icon-mobile-nav" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256"><path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path></svg>
+          </button>
+        </nav>
         </nav>
         <header>
           <div class="header-text-box">
@@ -88,7 +94,7 @@
         <h2>Our Featured Solutions</h2>
         <div class="grid-services">
           <figure class="services-card services-card--1">
-            <a href="#" class="btn btn--services">
+            <a href="#" class="btn btn--services" title="learn more about Urban Living Walls">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path></svg>
             </a>
             <h3 class="services-title">Urban Living Walls</h3>
@@ -105,7 +111,7 @@
           </figure>
 
           <figure class="services-card services-card--2">
-              <a href="#" class="btn btn--services">
+              <a href="#" class="btn btn--services" title="learn more about Smart Irrigation">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path></svg>
               </a>
               <h3 class="services-title">Smart Irrigation</h3>
@@ -122,7 +128,7 @@
           </figure>
 
           <figure class="services-card services-card--3">
-              <a href="#" class="btn btn--services">
+              <a href="#" class="btn btn--services" title="learn more about Eco Urban Furniture">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path></svg>
               </a>
               <h3 class="services-title">Eco Urban Furniture</h3>
@@ -157,7 +163,7 @@
               <td class="table-colunm--tag">Rooftop Garden</td>
               <td class="table-colunm--location">New York, USA</td>
               <td class="table-colunm--link">
-                <a href="#">
+                <a href="#" title="link to project Skyline Green Roof">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"></path></svg>
                 </a>
               </td>
@@ -167,7 +173,7 @@
               <td class="table-colunm--tag">Hydroponic Wall</td>
               <td class="table-colunm--location">Tokyo, Japan</td>
               <td class="table-colunm--link">
-                <a href="#">
+                <a href="#" title="link to project Smart Vertical Farm">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"></path></svg>
                 </a>
               </td>
@@ -177,7 +183,7 @@
               <td class="table-colunm--tag">Green Public Spaces</td>
               <td class="table-colunm--location">Amsterdam, NL</td>
               <td class="table-colunm--link">
-                <a href="#">
+                <a href="#" title="link to project Sustainable Bus Stops">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"></path></svg>
                 </a>
               </td>
@@ -187,7 +193,7 @@
               <td class="table-colunm--tag">Recycled Urban Seating</td>
               <td class="table-colunm--location">Berlin, Germany</td>
               <td class="table-colunm--link">
-                <a href="#">
+                <a href="#" title="link to project Eco Street Benches">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"></path></svg>
                 </a>
               </td>

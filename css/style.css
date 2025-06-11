@@ -26,7 +26,7 @@ TEXT DARK: #0f1214
   --blue-main: #22a6b3;
   --background-dark: #262e32;
 
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 * {
@@ -133,16 +133,18 @@ header {
 }
 
 /* NAVIGATION */
-nav {
+.navigation {
   padding: 20px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 997;
 }
 
 .nav-logo {
   font-size: 25px;
   font-weight: 600;
+  z-index: 998;
 }
 
 .nav-links {
@@ -663,4 +665,13 @@ td {
 
 .project-section-img {
   transform: rotate(-15grad);
+}
+
+/* mobile navigation */
+.bnt-mobile-nav {
+  display: none;
+  background-color: white;
+  color: var(--dark-text);
+  border: none;
+  z-index: 9999;
 }

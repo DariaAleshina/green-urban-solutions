@@ -3,6 +3,9 @@
 // SELECTIONS
 const allSections = document.querySelectorAll('section');
 
+const navigationBar = document.querySelector('#header-navigation');
+const btnMobileNav = document.querySelector('.bnt-mobile-nav');
+
 const btnHeader = document.querySelector('.btn--header');
 const btnServices = document.querySelectorAll('.btn--services');
 
@@ -140,3 +143,12 @@ dotContainer.addEventListener('click', function (event) {
 
 btnTestimonialsLeft.addEventListener('click', openPrevTestimonial);
 btnTestimonialsRight.addEventListener('click', openNextTestimonial);
+
+// mobile navigation animations
+if (btnMobileNav) {
+    btnMobileNav.addEventListener('click', e => {
+        e.preventDefault();
+        navigationBar.classList.toggle('nav-open');
+        btnMobileNav.classList.toggle('nav-open');
+    })
+}

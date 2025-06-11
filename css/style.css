@@ -26,7 +26,7 @@ TEXT DARK: #0f1214
   --blue-main: #22a6b3;
   --background-dark: #262e32;
 
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 * {

@@ -101,7 +101,7 @@
 
   /* testimonials */
   .corousel-container {
-    width: 95%;
+    width: 90%;
     padding: 20px 35px 20px 85px;
   }
 
@@ -159,6 +159,7 @@
 
   .corousel-dots {
     bottom: 0;
+    gap: 30px;
   }
 
   /* FAQ */
@@ -240,7 +241,7 @@
     width: 90%;
   }
   .btn--header {
-    width: 70%;
+    width: 85%;
   }
 
   h2 {
@@ -263,7 +264,11 @@
 
   .corousel-container {
     padding: 50px 50px;
+    width: 80%;
   }
+
+  .corousel-container img {
+    height: 150px;
 
   .accordion-item {
     column-gap: 20px;

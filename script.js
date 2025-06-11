@@ -149,6 +149,5 @@ if (btnMobileNav) {
     btnMobileNav.addEventListener('click', e => {
         e.preventDefault();
         navigationBar.classList.toggle('nav-open');
-        btnMobileNav.classList.toggle('nav-open');
     })
 }

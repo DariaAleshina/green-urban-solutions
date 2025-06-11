@@ -25,6 +25,14 @@ const btnTestimonialsRight = document.querySelector('.btn-corousel--right');
 let currentTestimonial = 0;
 const maxNumberTestimonials = testimonials.length;
 
+// mobile navigation animations
+if (btnMobileNav) {
+    btnMobileNav.addEventListener('click', e => {
+        e.preventDefault();
+        navigationBar.classList.toggle('nav-open');
+    })
+}
+
 // sections reveal while scrolling
 const revealSection = function (entries, observer) {
     entries.forEach(entry => {
@@ -43,10 +51,41 @@ allSections.forEach(section => {
     sectionObserver.observe(section);
 });
 
-// Page Navigation
-btnHeader.addEventListener('click', function () {
-    section2.scrollIntoView({ behavior: 'smooth' });
-});
+// Page Navigation w/Smooth Scrolling
+const scrollSmoothly = function (e) {
+    e.preventDefault();
+    const link = e.target.closest('a');
+    if (!link) return;
+
+    const linkRef = link.getAttribute('href');
+    if (!linkRef) return;
+
+    const classType = e.target.classList;
+
+    // scroll to sections
+    if (linkRef !== '#' && linkRef.startsWith('#')) {
+        const target = document.querySelector(`${linkRef}`);
+        let offset = 0;
+        if (target.classList.contains('section--hidden')) offset = 96;
+
+        const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+
+        window.scrollTo({
+            top: top,
+            behavior: "smooth"
+        });
+
+    }
+
+    // closing mobile nav if applicable
+    if (classType.contains('nav-link')) {
+        navigationBar.classList.toggle('nav-open');
+    }
+
+}
+
+navigationBar.addEventListener('click', scrollSmoothly);
+btnHeader.addEventListener('click', scrollSmoothly);
 
 
 
@@ -144,10 +183,3 @@ dotContainer.addEventListener('click', function (event) {
 btnTestimonialsLeft.addEventListener('click', openPrevTestimonial);
 btnTestimonialsRight.addEventListener('click', openNextTestimonial);
 
-// mobile navigation animations
-if (btnMobileNav) {
-    btnMobileNav.addEventListener('click', e => {
-        e.preventDefault();
-        navigationBar.classList.toggle('nav-open');
-    })
-}

@@ -543,6 +543,12 @@ footer {
   justify-content: center;
 
   top: 50%;
+
+  box-sizing: border-box;
+}
+
+.btn-corousel:focus {
+  border: 1.5px solid var(--green-secondary);
 }
 
 .btn-corousel--left {

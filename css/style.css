@@ -675,3 +675,13 @@ td {
   border: none;
   z-index: 9999;
 }
+
+footer {
+  text-align: center;
+}
+
+footer a {
+  padding: 0;
+  color: var(--green-dark);
+  font-weight: bold;
+}

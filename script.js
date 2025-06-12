@@ -21,6 +21,8 @@ const dotContainer = document.querySelector('.corousel-dots');
 const btnTestimonialsLeft = document.querySelector('.btn-corousel--left');
 const btnTestimonialsRight = document.querySelector('.btn-corousel--right');
 
+const currentYearBox = document.querySelector('#copyright-current-year');
+
 // INIT SETUP
 let currentTestimonial = 0;
 const maxNumberTestimonials = testimonials.length;
@@ -53,7 +55,7 @@ allSections.forEach(section => {
 
 // Page Navigation w/Smooth Scrolling
 const scrollSmoothly = function (e) {
-    e.preventDefault();
+    // e.preventDefault();
     const link = e.target.closest('a');
     if (!link) return;
 
@@ -64,6 +66,7 @@ const scrollSmoothly = function (e) {
 
     // scroll to sections
     if (linkRef !== '#' && linkRef.startsWith('#')) {
+        e.preventDefault();
         const target = document.querySelector(`${linkRef}`);
         let offset = 0;
         if (target.classList.contains('section--hidden')) offset = 90;
@@ -182,4 +185,8 @@ dotContainer.addEventListener('click', function (event) {
 
 btnTestimonialsLeft.addEventListener('click', openPrevTestimonial);
 btnTestimonialsRight.addEventListener('click', openNextTestimonial);
+
+
+// footer copyright dynamic year display
+currentYearBox.textContent = new Date().getFullYear();
 

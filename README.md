@@ -1,41 +1,38 @@
-# Urban Green Solutions - HTML & CSS Practice Project
+# 🌿 Urban Green Solutions – HTML & CSS Practice Project
 
-## 🌿 About the Project
+GreenScape is fictional sustainability brand website designed and built to practice web design and front-end development skills with HTML, CSS, and JavaScript.
 
-This project, **Urban Green Solutions**, is a practice exercise created while following Jonas Schmedtmann’s online course, **"Build Responsive Real-World Websites with HTML and CSS."** While the course provides the technical foundation, the **content, theme, and design are entirely my own**.
-
-The project simulates a **fictitious sustainability company** that transforms urban spaces with green innovations.
-
-## 🛠️ Technologies Used
-
-- **HTML5** - Semantic and structured markup
-- **CSS3** - Modern styling with flexbox and grid
-- **Responsive Design** - Ensures adaptability across different screen sizes
-
-## 📌 Purpose
-
-This project is for **learning purposes only** and serves as a portfolio piece to showcase my ability to structure and style websites beyond the course's original furniture-related theme.
-
-## 🚀 Live Demo
-
-TBC
-
-<!-- [🔗 View Live Version](#) _(Link to hosted version if available)_ -->
-
-## 📂 Project Structure
-
-```
-urban-green-solutions/
-│── index.html  # Main HTML file
-│── style.css   # Stylesheet
-│── images/     # Folder containing images used in the project
-│── README.md   # Project documentation
-```
-
-<!-- ## 🎓 Credits
-- **Course Author**: Jonas Schmedtmann ([Original Course](https://www.udemy.com/course/design-and-develop-a-killer-website-with-html5-and-css3/))
-- **Custom Theme & Content**: Created by me -->
+The project showcases a fully responsive, accessible, and interactive landing page for a company that specializes in transforming city environments through innovations like vertical gardens and smart irrigation systems.
 
 ---
 
-📝 _This project is not for commercial use but a creative exercise in web development._ 🚀
+## 🚀 Live Demo
+
+👉 [green-urban-solutions.app](https://green-urban-solutions-daria-aleshina.netlify.app/)
+
+---
+
+## 🧩 Key Features & Highlights
+
+- 📱 **Responsive Design**
+- 📱 **Mobile Navigation**
+- 💬 **Testimonial Carousel**
+- 📚 **Accordion FAQ**
+- 📊 **Project Table**
+- 👀 **Section Reveal on Scroll**
+- 🧭 **Smooth Scrolling**
+
+---
+
+## 🛠️ Technologies Used
+
+- **HTML5** – Semantic and accessible markup
+- **CSS3** – Custom styling with Flexbox, Grid, and transitions
+- **Java Script (Vanilla)** – Interactive components: carousel, accordion, scroll reveal, smooth scrolling
+
+---
+
+## 📬 Contact
+
+Interested in working together or hiring a frontend developer?  
+📧 [Get in touch](mailto:ddaleshina@gmail.com?subject=Hire%20the%20Developer%20Behind%20Urban%20Green%20Solutions&body=Hi%2C%0A%0AI%20found%20your%20Urban%20Green%20Solutions%20project%20and%20would%20love%20to%20chat%20about%20working%20together.%0A%0AThanks!)

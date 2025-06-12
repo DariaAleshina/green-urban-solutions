@@ -346,8 +346,8 @@ h3 {
   /* background: rgba(31, 31, 31, 0.3); */
   background: linear-gradient(
     to top,
-    rgba(31, 31, 31, 0.7),
-    rgba(0, 0, 0, 0) 70%
+    rgba(31, 31, 31, 0.97),
+    rgba(0, 0, 0, 0.228) 80%
   ); /* Adjust opacity to control darkness */
   z-index: 1;
 }
